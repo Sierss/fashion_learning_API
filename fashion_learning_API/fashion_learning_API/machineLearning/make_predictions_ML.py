@@ -49,6 +49,6 @@ def make_predictions(image_path):
 
 	# return names_class_predictions
 
-	response = "make_predictions communitacionts ok"
+	response = image_path
 
 	return response
