@@ -15,7 +15,7 @@ def index(request):
 	print(request.POST)
 
 	# Get the image
-	image = request.POST["image"]
+	image = request.FILES["image"]
 
 
 	# Se crea respuesta
