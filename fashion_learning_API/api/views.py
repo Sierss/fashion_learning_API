@@ -16,7 +16,7 @@ def index(request):
 	# Do predictions using the ML model
 	# prediction = make_predictions(image.temporary_file_path)
 
-	prediction = make_predictions(image.filename)
+	prediction = make_predictions(image.file.name)
 
 	# prediction = make_predictions("image.filename")
 	
