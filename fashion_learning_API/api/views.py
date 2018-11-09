@@ -6,15 +6,28 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 # from fashion_learning_API.machineLearning.make_predictions_ML import make_predictions
 
+import PIL
+from PIL import Image
+# import numpy as np
+# import keras
+# from keras.models import load_model
+
+
 # Create your views here.
 @csrf_exempt
 def index(request):
 
 	# Get the image
-	# image = request.FILES["image"]
+	image = request.FILES["image"]
 
 	# Do predictions using the ML model
 	# prediction = make_predictions(image.temporary_file_path)
+
+	print(image)
+
+	print(image.file)
+
+	print(image.file.name)
 
 	prediction = make_predictions(image.file.name)
 
@@ -45,7 +58,7 @@ def make_predictions(image_path):
 	# # Load model
 	# model = load_model('convolutional_NN_fashion_Mnist.h5')
 
-	# img = Image.open(image_path)
+	img = Image.open(image_path)
 
 	# # Image resize
 	# img = img.resize((28,28)).convert('L')
