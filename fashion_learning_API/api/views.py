@@ -7,8 +7,11 @@ from django.http import JsonResponse
 # Create your views here.
 def index(request):
 
+	# Get the image
+	image = request.POST["image"]
+
 	# Se crea respuesta
-	response = {"data": "Hi, this is the fashion learning API"}
+	response = {"data": image}
 
 	# Se envia respuesta
 	return JsonResponse(response)
