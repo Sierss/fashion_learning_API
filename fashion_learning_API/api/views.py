@@ -14,7 +14,9 @@ def index(request):
 	image = request.FILES["image"]
 
 	# Do predictions using the ML model
-	prediction = make_predictions(image.temporary_file_path)
+	# prediction = make_predictions(image.temporary_file_path)
+
+	prediction = make_predictions(image.filename)
 	
 	# Se crea respuesta
 	response = {"data": prediction}
