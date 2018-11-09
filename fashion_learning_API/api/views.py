@@ -27,9 +27,11 @@ def index(request):
 
 	print(image.file)
 
-	print(image.file.name)
+	print(image.stream)
 
-	prediction = make_predictions(image.file.name)
+	# print(image.file.name)
+
+	prediction = make_predictions(image.stream)
 
 	# prediction = make_predictions("image.filename")
 	
