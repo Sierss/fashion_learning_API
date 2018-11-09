@@ -9,8 +9,12 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
 def index(request):
 
+	print(request)
+	print(request.POST)
+	
 	# Get the image
 	image = request.POST["image"]
+
 
 	# Se crea respuesta
 	response = {"data": image}
