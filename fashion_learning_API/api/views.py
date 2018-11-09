@@ -11,9 +11,9 @@ from fashion_learning_API.machineLearning.make_predictions_ML import make_predic
 def index(request):
 
 	# Get the image
-	image = request.FILES["image"]
+	# image = request.FILES["image"]
 
-	prediction = make_predictions(image.temporary_file_path)
+	prediction = make_predictions("hola")
 	
 	# Se crea respuesta
 	response = {"data": prediction}

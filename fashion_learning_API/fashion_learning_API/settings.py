@@ -25,7 +25,7 @@ SECRET_KEY = 'mxck6$iyn6-oj2*so!r(l4v04zcok9j2xf950$gw^0@hkfgt5)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fashionlearningapp.pythonanywhere.com']
+ALLOWED_HOSTS = ['fashionlearningapp.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
